@@ -1,0 +1,83 @@
+package com.example.pranaw.contactlistdemo;
+
+import android.Manifest;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
+import android.support.v4.app.ActivityCompat;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.Toast;
+
+import java.util.ArrayList;
+
+public class PhoneCall extends AppCompatActivity implements AdapterView.OnItemClickListener {
+    ListView lv;
+    ArrayList<Contact> contactList;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_phone_call);
+        lv = (ListView) findViewById(R.id.lv);
+        contactList = new ArrayList<>();//<>() called diamond syntax is added in jdk1.8
+        fillList();
+
+
+        ArrayAdapter<Contact> ad = new ArrayAdapter<Contact>(this, android.R.layout.simple_list_item_1, contactList);
+        lv.setAdapter(ad);
+
+        lv.setOnItemClickListener(this);
+    }
+    public void fillList() {
+        Contact c=new Contact();
+        c.setContact("8574235051");
+        c.setName("Pranaw");
+        contactList.add(c);
+
+        Contact c1=new Contact();
+        c1.setContact("9838265653");
+        c1.setName("Pankaj");
+        contactList.add(c1);
+
+        Contact c2=new Contact();
+        c2.setContact("8670182381");
+        c2.setName("Mummy");
+        contactList.add(c2);
+
+        Contact c3=new Contact();
+        c3.setContact("56323");
+        c3.setName("abc");
+        contactList.add(c3);
+
+
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        Contact mv=contactList.get(position);
+
+        String cname=mv.getName();
+        String cno=mv.getContact();
+
+        Intent i = new Intent(Intent.ACTION_CALL);
+        Uri u = Uri.parse("tel:" + cno);
+        i.setData(u);
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
+
+        startActivity(i);
+
+    }
+}

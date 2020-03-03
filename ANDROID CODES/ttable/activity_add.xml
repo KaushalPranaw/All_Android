@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pranaw.studentapp.Add">
+
+    <TableRow>
+        <TextView android:text="SID"
+            android:textSize="30dp"
+            android:textColor="#0c0812" />
+        <EditText  android:hint="enter id here"
+            android:id="@+id/txtid"
+            />
+    </TableRow>
+    <TableRow>
+        <TextView android:text="NAME"
+            android:textSize="25dp"
+            android:textColor="#0c0812" />
+        <EditText  android:hint="enter name here"
+            android:id="@+id/txtname"
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="EMAIL"
+            android:textSize="25dp"
+            android:textColor="#0c0812" />
+        <EditText  android:hint="enter email here"
+            android:id="@+id/txtemail"
+            />
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/btnsubmit"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_span="2"
+            android:background="#bc52a6"
+            android:text="add"
+            android:onClick="insertData"/>
+    </TableRow>
+
+</TableLayout>

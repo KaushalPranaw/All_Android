@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pranaw.studentapp.MainActivity"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:onClick="add"
+        android:text="add" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:onClick="update"
+        android:text="update" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:onClick="delete"
+        android:text="delete" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:onClick="search"
+        android:text="search" />
+
+    <Button
+        android:id="@+id/view1"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:onClick="view1"
+        android:text="view" />
+
+
+</LinearLayout>

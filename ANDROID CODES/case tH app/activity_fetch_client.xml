@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pranaw.casetrackinghandlingapp.FetchClient"
+
+
+    android:orientation="vertical"
+
+    android:background="#14f1c1"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Client id">
+            <EditText
+                android:layout_width="250sp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtclientid"
+                android:textSize="30sp"
+
+                android:textColor="#d70e30"
+                android:background="#fddd0c"/>
+
+
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fetch"
+            android:layout_gravity="center"
+            android:layout_marginTop="5sp"
+            android:layout_marginLeft="5dp"
+            android:background="#ce52c5"
+            android:textColor="#910101"
+            android:textSize="25sp"
+            android:onClick="fetchClient"/>
+
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginTop="50dp"
+
+
+        >
+        <EditText
+            android:layout_marginTop="50dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtclientname"
+            android:textSize="30sp"
+            android:textColor="#d70e30"
+            android:background="#fddd0c"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+
+
+
+        >
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtclientaddress"
+            android:textSize="30sp"
+            android:textColor="#d70e30"
+            android:background="#fddd0c"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+
+
+
+        >
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtclientgender"
+            android:textSize="30sp"
+            android:textColor="#d70e30"
+            android:background="#fddd0c"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+
+
+
+        >
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtclientphone"
+            android:textSize="30sp"
+            android:textColor="#d70e30"
+            android:background="#fddd0c"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <ImageView
+
+        android:layout_gravity="center"
+        android:id="@+id/clientimg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#041729"
+
+        />
+
+
+</LinearLayout>

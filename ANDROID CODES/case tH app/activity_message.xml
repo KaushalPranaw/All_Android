@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pranaw.casetrackinghandlingapp.Message"
+
+
+    android:orientation="vertical"
+
+    android:background="#14f1c1"
+    >
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+
+        android:layout_gravity="center"
+        android:hint="Enter Contact Number">
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtcontact"
+            android:textSize="30sp"
+
+            android:textColor="#d70e30"
+            android:background="#fddd0c"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:hint="Enter Message Here">
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:id="@+id/txtmsg"
+            android:textSize="30sp"
+
+            android:textColor="#d70e30"
+            android:background="#fddd0c"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+    </android.support.design.widget.TextInputLayout>
+
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="send"
+       android:textSize="30dp"
+       android:textStyle="bold"
+       android:background="#e914da"
+       android:textColor="#1c19d6"
+       android:layout_marginTop="30dp"
+       android:layout_gravity="center"/>
+
+</LinearLayout>

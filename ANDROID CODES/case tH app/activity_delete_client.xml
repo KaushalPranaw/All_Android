@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pranaw.casetrackinghandlingapp.DeleteClient"
+
+    android:orientation="vertical"
+
+    android:background="#14f1c1"
+    >
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        android:hint="Enter Client id">
+        <EditText
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtclientid"
+            android:textSize="30sp"
+
+            android:textColor="#d70e30"
+            android:background="#fddd0c"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="delete"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp"
+        android:background="#ce52c5"
+        android:textColor="#910101"
+        android:textSize="30sp"
+        android:onClick="deleteClient"
+        />
+
+</LinearLayout>

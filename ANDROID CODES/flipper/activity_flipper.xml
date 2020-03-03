@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pranaw.oeosapp.flipper"
+    >
+    <TableLayout
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <ViewFlipper
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#e1d44a"
+        android:id="@+id/viewFlipper"
+        >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:srcCompat="@drawable/l1"
+            />
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:srcCompat="@drawable/l2"
+           />
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:srcCompat="@drawable/l3"
+            />
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:srcCompat="@drawable/l4"
+           />
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:srcCompat="@drawable/l5"
+          />
+
+
+
+    </ViewFlipper>
+    </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="prev"
+        android:background="#e4081e"
+        android:id="@+id/prev"
+        android:layout_marginLeft="20dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="next"
+        android:background="#e4081e"
+        android:layout_marginLeft="280dp"
+        android:id="@+id/next"/>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/callus"
+        android:onClick="call"
+        android:layout_marginTop="400dp"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

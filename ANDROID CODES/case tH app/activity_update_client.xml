@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pranaw.casetrackinghandlingapp.UpdateClient"
+
+    android:orientation="vertical"
+
+    android:background="#14f1c1"
+    >
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        android:hint="Enter Client id">
+        <EditText
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtclientid"
+            android:textSize="30sp"
+
+            android:textColor="#d70e30"
+            android:background="#fddd0c"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:hint="Enter Client name"
+
+
+        >
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtclientname"
+            android:textSize="30sp"
+            android:textColor="#d70e30"
+            android:background="#fddd0c"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:hint="Enter Client Address"
+
+
+        >
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtclientaddress"
+            android:textSize="30sp"
+            android:textColor="#d70e30"
+            android:background="#fddd0c"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:hint="Enter Client gender"
+
+
+        >
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtclientgender"
+            android:textSize="30sp"
+            android:textColor="#d70e30"
+            android:background="#fddd0c"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:hint="Enter Client phone"
+
+
+        >
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtclientphone"
+            android:textSize="30sp"
+            android:textColor="#d70e30"
+            android:background="#fddd0c"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#041729"
+        android:layout_gravity="center"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Click photo"
+        android:gravity="center"
+        android:onClick="clickPhoto"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="update"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp"
+        android:background="#ce52c5"
+        android:textColor="#910101"
+        android:textSize="30sp"
+        android:onClick="updateClient"
+        />
+</LinearLayout>

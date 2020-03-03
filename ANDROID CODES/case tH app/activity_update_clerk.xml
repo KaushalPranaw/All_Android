@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pranaw.casetrackinghandlingapp.UpdateClerk"
+    android:orientation="vertical"
+
+    android:background="#14f1c1"
+    >
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        android:hint="Enter Clerk id">
+        <EditText
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtclerkid"
+            android:textSize="30sp"
+
+            android:textColor="#d70e30"
+            android:background="#fddd0c"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:hint="Enter Clerk name"
+
+
+        >
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtclerkname"
+            android:textSize="30sp"
+            android:textColor="#d70e30"
+            android:background="#fddd0c"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:hint="Enter ClerkAddress"
+
+
+        >
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtclerkaddress"
+            android:textSize="30sp"
+            android:textColor="#d70e30"
+            android:background="#fddd0c"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:hint="Enter clerk gender"
+
+
+        >
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtclerkgender"
+            android:textSize="30sp"
+            android:textColor="#d70e30"
+            android:background="#fddd0c"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:hint="Enter clerk password"
+
+
+        >
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtclerkpass"
+            android:textSize="30sp"
+            android:textColor="#d70e30"
+            android:background="#fddd0c"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:hint="Enter Clerk phone"
+
+
+        >
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtclerkphone"
+            android:textSize="30sp"
+            android:textColor="#d70e30"
+            android:background="#fddd0c"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#041729"
+        android:layout_gravity="center"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Click photo"
+        android:gravity="center"
+        android:onClick="clickPhoto"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="update"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp"
+        android:background="#ce52c5"
+        android:textColor="#910101"
+        android:textSize="30sp"
+        android:onClick="updateClerk"
+        />
+
+
+
+
+
+
+
+</LinearLayout>

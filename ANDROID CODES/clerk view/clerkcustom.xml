@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#14f1c1"
+    >
+    <TextView
+    android:id="@+id/txtclerkname"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Clerk name"
+        android:textColor="#dc0c28"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:background="#e7c905"
+        android:layout_gravity="center"
+
+        />
+    <TextView
+        android:id="@+id/txtclerkaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clerk address"
+        android:layout_marginTop="20dp"
+        android:textColor="#dc0c28"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:background="#e7c905"
+        android:layout_gravity="center"
+
+        />
+    <TextView
+        android:id="@+id/txtclerkgender"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="gender"
+        android:textColor="#dc0c28"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:background="#e7c905"
+        android:layout_gravity="center"
+
+        />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/txtclerkphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clerk phone number"
+        android:textColor="#dc0c28"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:background="#e7c905"
+        android:layout_gravity="center"
+
+        />
+
+
+
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#0f0f10"
+
+
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+
+        />
+
+
+
+
+
+
+</LinearLayout>
